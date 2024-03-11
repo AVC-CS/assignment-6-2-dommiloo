@@ -24,7 +24,7 @@ int getClosestMed(int rdnum1, int rdnum2, int rdnum3)
         {
         return rdnum1;
         }
-        else if ((((mean - rdnum2)) < ((mean - rdnum1))) && (((mean - rdnum2)) < ((mean - rdnum3))) ){
+        else if (((abs(mean - rdnum2)) < (abs(mean - rdnum1))) && ((abs(mean - rdnum2)) < (abs(mean - rdnum3))) ){
          return rdnum2;
         }
 
